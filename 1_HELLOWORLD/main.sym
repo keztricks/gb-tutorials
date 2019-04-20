@@ -1,0 +1,189 @@
+; no$gmb format .sym file
+; Generated automagically by ASxxxx linker V01.75 (SDK 3.0.0)
+; Area: .  .ABS.
+00:0000 s__HEADER
+00:0000 .init
+00:0200 s__CODE
+00:0A89 s__HOME
+00:0F0F s__BASE
+00:1D33 s__GSINITTAIL
+00:1D33 s__LIT
+00:1D33 s__GSINIT
+00:1D34 s__GSFINAL
+00:C000 .OAM
+00:C0A0 s__DATA
+00:C0A0 s__BSS
+00:C127 s__HEAP
+00:C127 s__BSEG
+00:C127 s__ISEG
+00:C127 s__XSEG
+00:C127 s__OVERLAY
+00:E000 .STACK
+00:FF80 .refresh_OAM
+; Area: _CODE
+00:0200 _main
+00:0216 __divschar_rrx_s
+00:021D __divschar_rrx_hds
+00:0224 __modschar_rrx_s
+00:022B __modschar_rrx_hds
+00:0230 __divsint_rrx_s
+00:023C __divsint_rrx_hds
+00:0244 __modsint_rrx_s
+00:0250 __modsint_rrx_hds
+00:0256 __divuchar_rrx_s
+00:025D __divuchar_rrx_hds
+00:0264 __moduchar_rrx_s
+00:026B __moduchar_rrx_hds
+00:0270 __divuint_rrx_s
+00:027C __divuint_rrx_hds
+00:0284 __moduint_rrx_s
+00:0290 __moduint_rrx_hds
+00:0296 .mod8
+00:0296 .div8
+00:029E .mod16
+00:029E .div16
+00:02D8 .modu8
+00:02D8 .divu8
+00:02DB .modu16
+00:02DB .divu16
+00:0318 _putchar
+00:0321 _setchar
+00:032A _gotoxy
+00:0335 _posx
+00:0346 _posy
+00:0357 .adv_gcurs
+00:0374 .circle
+00:0417 .horlin
+00:044F .verlin
+00:04AB .circplot
+00:0529 .box
+00:05FF .line
+00:0720 .xonly
+00:086F .yonly
+00:0890 .plot
+00:08AD .wrbyte
+00:092F .getpix
+00:0964 .wrtchr
+00:09C8 _gotogxy
+00:09D3 _wrtchr
+00:09E8 _getpix
+00:09F4 _color
+00:0A03 _circle
+00:0A1D _box
+00:0A41 _line
+00:0A59 _plot_point
+00:0A6D _plot
+; Area: _HEADER
+00:01D2 _exit
+; Area: _HOME
+00:0A89 .set_mode
+00:0A99 .remove_VBL
+00:0A9F .remove_LCD
+00:0AA5 .remove_TIM
+00:0AAB .remove_SIO
+00:0AB1 .remove_JOY
+00:0AB7 .add_VBL
+00:0ABD .add_LCD
+00:0AC3 .add_TIM
+00:0AC9 .add_SIO
+00:0ACF .add_JOY
+00:0AD5 .remove_int
+00:0AF5 .add_int
+00:0B11 .wait_vbl_done
+00:0B11 _wait_vbl_done
+00:0B28 _display_off
+00:0B28 .display_off
+00:0B49 .serial_IO
+00:0B78 _mode
+00:0B81 _get_mode
+00:0B86 _enable_interrupts
+00:0B88 _disable_interrupts
+00:0B8A _reset
+00:0B8A .reset
+00:0B90 _set_interrupts
+00:0B9B _remove_VBL
+00:0BA6 _remove_LCD
+00:0BB1 _remove_TIM
+00:0BBC _remove_SIO
+00:0BC7 _remove_JOY
+00:0BD2 _add_VBL
+00:0BDD _add_LCD
+00:0BE8 _add_TIM
+00:0BF3 _add_SIO
+00:0BFE _add_JOY
+00:0C09 _clock
+00:0C12 __printTStates
+00:0C13 banked_call
+00:0C2C banked_ret
+00:0C35 _printf
+00:0C52 _sprintf
+; Area: _BASE
+00:0F0F font_copy_uncompressed
+00:0F45 font_copy_compressed
+00:0F9A font_load
+00:0FE2 font_copy_current
+00:102A font_set
+00:1037 .put_char
+00:1050 .out_char
+00:1057 .del_char
+00:10B2 _font_load
+00:10C0 _font_set
+00:10CF _font_init
+00:10F1 _cls
+00:10F1 .cls
+00:1123 .cr_curs
+00:1138 .adv_curs
+00:1194 .tmode
+00:11BD .tmode_out
+00:11CD _font_load_ibm_fixed
+00:11D4 _font_ibm_fixed
+00:12D6 _font_ibm_fixed_tiles
+00:1AD6 .gmode
+00:1B38 .vbl
+00:1B43 .lcd
+00:1B50 .draw_image
+00:1B5A .switch_data
+00:1B91 _switch_data
+00:1BAC _draw_image
+00:1BBF .y_table
+00:1CDF .init_vram
+00:1CED .init_wtt
+00:1CFD .init_btt
+00:1D0B .init_tt
+00:1D11 .copy_vram
+00:1D20 _get_data
+00:1D20 _set_data
+; Area: _LIT
+; Area: _GSINIT
+00:1D33 gsinit
+; Area: _GSINITTAIL
+; Area: _GSFINAL
+; Area: _DATA
+; Area: _BSS
+00:C0A0 __cpu
+00:C0A1 .mode
+00:C0A2 __io_out
+00:C0A3 __io_in
+00:C0A4 __io_status
+00:C0A5 .vbl_done
+00:C0A6 __current_bank
+00:C0A7 _sys_time
+00:C0A7 .sys_time
+00:C0A9 .int_0x40
+00:C0B9 .int_0x48
+00:C0C9 .int_0x50
+00:C0D9 .int_0x58
+00:C0E9 .int_0x60
+00:C0FC font_current
+00:C0FF font_first_free_tile
+00:C100 font_table
+00:C112 .curx
+00:C113 .cury
+00:C114 .fg_colour
+00:C115 .bg_colour
+; Area: _HEAP
+00:C127 _malloc_heap_start
+; Area: _OVERLAY
+; Area: _ISEG
+; Area: _BSEG
+; Area: _XSEG

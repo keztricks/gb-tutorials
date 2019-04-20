@@ -1,0 +1,18 @@
+XL
+H 9 areas 2 global symbols
+M lcc101680
+S _printf Ref0000
+A _CODE size 16 flags 0
+S _main Def0000
+A _DATA size 0 flags 0
+A _OVERLAY size 0 flags 0
+A _ISEG size 0 flags 0
+A _BSEG size 0 flags 0
+A _XSEG size 0 flags 0
+A _GSINIT size 0 flags 0
+A _GSFINAL size 0 flags 0
+A _HOME size 0 flags 0
+T 00 00 21 0A 00 E5 CD 00 00 E8 02 C9 48 45 4C 4C
+R 00 00 00 00 00 03 00 00 02 07 00 00
+T 0E 00 4F 20 57 4F 52 4C 44 00
+R 00 00 00 00
