@@ -1,0 +1,108 @@
+; no$gmb format .sym file
+; Generated automagically by ASxxxx linker V01.75 (SDK 3.0.0)
+; Area: .  .ABS.
+00:0000 s__HEADER
+00:0000 .init
+00:0200 s__CODE
+00:0298 s__HOME
+00:046B s__BASE
+00:0580 s__LIT
+00:0580 s__GSINIT
+00:05A8 s__GSINITTAIL
+00:05A9 s__GSFINAL
+00:C000 .OAM
+00:C0A0 s__DATA
+00:C0C0 s__BSS
+00:C119 s__HEAP
+00:C119 s__BSEG
+00:C119 s__ISEG
+00:C119 s__XSEG
+00:C119 s__OVERLAY
+00:E000 .STACK
+00:FF80 .refresh_OAM
+; Area: _CODE
+00:0200 _main
+; Area: _HEADER
+00:01D2 _exit
+; Area: _HOME
+00:0298 .set_mode
+00:02A8 .remove_VBL
+00:02AE .remove_LCD
+00:02B4 .remove_TIM
+00:02BA .remove_SIO
+00:02C0 .remove_JOY
+00:02C6 .add_VBL
+00:02CC .add_LCD
+00:02D2 .add_TIM
+00:02D8 .add_SIO
+00:02DE .add_JOY
+00:02E4 .remove_int
+00:0304 .add_int
+00:0320 .wait_vbl_done
+00:0320 _wait_vbl_done
+00:0337 _display_off
+00:0337 .display_off
+00:0358 .serial_IO
+00:0387 _mode
+00:0390 _get_mode
+00:0395 _enable_interrupts
+00:0397 _disable_interrupts
+00:0399 _reset
+00:0399 .reset
+00:039F _set_interrupts
+00:03AA _remove_VBL
+00:03B5 _remove_LCD
+00:03C0 _remove_TIM
+00:03CB _remove_SIO
+00:03D6 _remove_JOY
+00:03E1 _add_VBL
+00:03EC _add_LCD
+00:03F7 _add_TIM
+00:0402 _add_SIO
+00:040D _add_JOY
+00:0418 _clock
+00:0421 __printTStates
+00:0422 banked_call
+00:043B banked_ret
+00:0444 __initrleblock
+; Area: _BASE
+00:046B .mv_sprite
+00:047A _move_sprite
+00:0487 _set_win_data
+00:0487 _set_bkg_data
+00:04D4 _set_sprite_data
+00:0503 .set_sprite_tile
+00:0510 _set_sprite_tile
+00:051B .delay
+00:0555 _delay
+00:055E .copy_vram
+00:056D _get_data
+00:056D _set_data
+; Area: _LIT
+; Area: _GSINIT
+00:0580 gsinit
+; Area: _GSINITTAIL
+; Area: _GSFINAL
+; Area: _DATA
+00:C0A0 _birb
+; Area: _BSS
+00:C0C0 __cpu
+00:C0C1 .mode
+00:C0C2 __io_out
+00:C0C3 __io_in
+00:C0C4 __io_status
+00:C0C5 .vbl_done
+00:C0C6 __current_bank
+00:C0C7 _sys_time
+00:C0C7 .sys_time
+00:C0C9 .int_0x40
+00:C0D9 .int_0x48
+00:C0E9 .int_0x50
+00:C0F9 .int_0x58
+00:C109 .int_0x60
+; Area: _HEAP
+00:C119 _malloc_heap_start
+; Area: _OVERLAY
+; Area: _ISEG
+; Area: _BSEG
+; Area: _XSEG
