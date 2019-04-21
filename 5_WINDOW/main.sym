@@ -1,0 +1,180 @@
+; no$gmb format .sym file
+; Generated automagically by ASxxxx linker V01.75 (SDK 3.0.0)
+; Area: .  .ABS.
+00:0000 s__HEADER
+00:0000 .init
+00:0200 s__CODE
+00:0A1F s__HOME
+00:0BF2 s__BASE
+00:1D1A s__LIT
+00:1D1A s__GSINIT
+00:1F4B s__GSINITTAIL
+00:1F4C s__GSFINAL
+00:C000 .OAM
+00:C0A0 s__DATA
+00:C47A s__BSS
+00:C4FE s__HEAP
+00:C4FE s__BSEG
+00:C4FE s__ISEG
+00:C4FE s__XSEG
+00:C4FE s__OVERLAY
+00:E000 .STACK
+00:FF80 .refresh_OAM
+; Area: _CODE
+00:0200 _main
+00:02AE _putchar
+00:02B7 _setchar
+00:02C0 _gotoxy
+00:02CB _posx
+00:02DC _posy
+00:02ED .adv_gcurs
+00:030A .circle
+00:03AD .horlin
+00:03E5 .verlin
+00:0441 .circplot
+00:04BF .box
+00:0595 .line
+00:06B6 .xonly
+00:0805 .yonly
+00:0826 .plot
+00:0843 .wrbyte
+00:08C5 .getpix
+00:08FA .wrtchr
+00:095E _gotogxy
+00:0969 _wrtchr
+00:097E _getpix
+00:098A _color
+00:0999 _circle
+00:09B3 _box
+00:09D7 _line
+00:09EF _plot_point
+00:0A03 _plot
+; Area: _HEADER
+00:01D2 _exit
+; Area: _HOME
+00:0A1F .set_mode
+00:0A2F .remove_VBL
+00:0A35 .remove_LCD
+00:0A3B .remove_TIM
+00:0A41 .remove_SIO
+00:0A47 .remove_JOY
+00:0A4D .add_VBL
+00:0A53 .add_LCD
+00:0A59 .add_TIM
+00:0A5F .add_SIO
+00:0A65 .add_JOY
+00:0A6B .remove_int
+00:0A8B .add_int
+00:0AA7 .wait_vbl_done
+00:0AA7 _wait_vbl_done
+00:0ABE _display_off
+00:0ABE .display_off
+00:0ADF .serial_IO
+00:0B0E _mode
+00:0B17 _get_mode
+00:0B1C _enable_interrupts
+00:0B1E _disable_interrupts
+00:0B20 _reset
+00:0B20 .reset
+00:0B26 _set_interrupts
+00:0B31 _remove_VBL
+00:0B3C _remove_LCD
+00:0B47 _remove_TIM
+00:0B52 _remove_SIO
+00:0B5D _remove_JOY
+00:0B68 _add_VBL
+00:0B73 _add_LCD
+00:0B7E _add_TIM
+00:0B89 _add_SIO
+00:0B94 _add_JOY
+00:0B9F _clock
+00:0BA8 __printTStates
+00:0BA9 banked_call
+00:0BC2 banked_ret
+00:0BCB __initrleblock
+; Area: _BASE
+00:0BF2 font_copy_uncompressed
+00:0C28 font_copy_compressed
+00:0C7D font_load
+00:0CC5 font_copy_current
+00:0D0D font_set
+00:0D1A .put_char
+00:0D33 .out_char
+00:0D3A .del_char
+00:0D95 _font_load
+00:0DA3 _font_set
+00:0DB2 _font_init
+00:0DD4 _cls
+00:0DD4 .cls
+00:0E06 .cr_curs
+00:0E1B .adv_curs
+00:0E77 .tmode
+00:0EA0 .tmode_out
+00:0EB0 _move_win
+00:0EB9 _set_win_tiles
+00:0ECD _font_load_ibm_fixed
+00:0ED4 _font_ibm_fixed
+00:0FD6 _font_ibm_fixed_tiles
+00:17D6 .gmode
+00:1838 .vbl
+00:1843 .lcd
+00:1850 .draw_image
+00:185A .switch_data
+00:1891 _switch_data
+00:18AC _draw_image
+00:18BF .y_table
+00:19DF .delay
+00:1A19 _delay
+00:1A22 .init_vram
+00:1A30 .init_wtt
+00:1A40 .init_btt
+00:1A4E .init_tt
+00:1A54 _set_win_data
+00:1A54 _set_bkg_data
+00:1AA1 _set_sprite_data
+00:1AD0 _font_min
+00:1C7A .copy_vram
+00:1C89 _get_data
+00:1C89 _set_data
+00:1C9C _set_bkg_tiles
+00:1CB0 .set_xy_wtt
+00:1CC1 .set_xy_btt
+00:1CD0 .set_xy_tt
+00:1D01 _set_tiles
+; Area: _LIT
+; Area: _GSINIT
+00:1D1A gsinit
+; Area: _GSINITTAIL
+; Area: _GSFINAL
+; Area: _DATA
+00:C0A0 _backgroundTiles
+00:C1A0 _background
+00:C470 _windowMap
+; Area: _BSS
+00:C47A __cpu
+00:C47B .mode
+00:C47C __io_out
+00:C47D __io_in
+00:C47E __io_status
+00:C47F .vbl_done
+00:C480 __current_bank
+00:C481 _sys_time
+00:C481 .sys_time
+00:C483 .int_0x40
+00:C493 .int_0x48
+00:C4A3 .int_0x50
+00:C4B3 .int_0x58
+00:C4C3 .int_0x60
+00:C4D3 font_current
+00:C4D6 font_first_free_tile
+00:C4D7 font_table
+00:C4E9 .curx
+00:C4EA .cury
+00:C4EB .fg_colour
+00:C4EC .bg_colour
+; Area: _HEAP
+00:C4FE _malloc_heap_start
+; Area: _OVERLAY
+; Area: _ISEG
+; Area: _BSEG
+; Area: _XSEG
