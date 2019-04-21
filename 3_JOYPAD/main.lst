@@ -1,9 +1,9 @@
                               1 ;--------------------------------------------------------
                               2 ; File Created by SDCC : FreeWare ANSI-C Compiler
-                              3 ; Version 2.3.1 Sat Apr 20 23:51:26 2019
+                              3 ; Version 2.3.1 Sat Apr 20 23:58:24 2019
                               4 
                               5 ;--------------------------------------------------------
-                              6 	.module lcc372020
+                              6 	.module lcc671340
                               7 	
                               8 ;--------------------------------------------------------
                               9 ; Public variables in this module
@@ -97,7 +97,7 @@
                              93 ;	genAssign
                              94 ;	AOP_STK for _main_movementSpeed_1_1
    000C 2B                   95 	dec	hl
-   000D 36 0A                96 	ld	(hl),#0x0A
+   000D 36 05                96 	ld	(hl),#0x05
                              97 ;	main.c 10
                              98 ;	genIpush
                              99 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
@@ -541,7 +541,7 @@
                             537 ;	main.c 66
                             538 ;	genIpush
                             539 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   017C 21 64 00            540 	ld	hl,#0x0064
+   017C 21 32 00            540 	ld	hl,#0x0032
    017F E5                  541 	push	hl
                             542 ;	genCall
    0180 CD 00 00            543 	call	_delay
