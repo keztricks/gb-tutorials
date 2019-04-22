@@ -1,0 +1,102 @@
+; no$gmb format .sym file
+; Generated automagically by ASxxxx linker V01.75 (SDK 3.0.0)
+; Area: .  .ABS.
+00:0000 s__HEADER
+00:0000 .init
+00:0200 s__CODE
+00:0246 s__HOME
+00:03F2 s__BASE
+00:0488 s__GSINITTAIL
+00:0488 s__LIT
+00:0488 s__GSINIT
+00:0489 s__GSFINAL
+00:C000 .OAM
+00:C0A0 s__DATA
+00:C0A0 s__BSS
+00:C0F9 s__HEAP
+00:C0F9 s__BSEG
+00:C0F9 s__ISEG
+00:C0F9 s__XSEG
+00:C0F9 s__OVERLAY
+00:E000 .STACK
+00:FF80 .refresh_OAM
+; Area: _CODE
+00:0200 _main
+; Area: _HEADER
+00:01D2 _exit
+; Area: _HOME
+00:0246 .set_mode
+00:0256 .remove_VBL
+00:025C .remove_LCD
+00:0262 .remove_TIM
+00:0268 .remove_SIO
+00:026E .remove_JOY
+00:0274 .add_VBL
+00:027A .add_LCD
+00:0280 .add_TIM
+00:0286 .add_SIO
+00:028C .add_JOY
+00:0292 .remove_int
+00:02B2 .add_int
+00:02CE .wait_vbl_done
+00:02CE _wait_vbl_done
+00:02E5 _display_off
+00:02E5 .display_off
+00:0306 .serial_IO
+00:0335 _mode
+00:033E _get_mode
+00:0343 _enable_interrupts
+00:0345 _disable_interrupts
+00:0347 _reset
+00:0347 .reset
+00:034D _set_interrupts
+00:0358 _remove_VBL
+00:0363 _remove_LCD
+00:036E _remove_TIM
+00:0379 _remove_SIO
+00:0384 _remove_JOY
+00:038F _add_VBL
+00:039A _add_LCD
+00:03A5 _add_TIM
+00:03B0 _add_SIO
+00:03BB _add_JOY
+00:03C6 _clock
+00:03CF __printTStates
+00:03D0 banked_call
+00:03E9 banked_ret
+; Area: _BASE
+00:03F2 .padup
+00:03F2 _waitpadup
+00:0402 .jpad
+00:042F .wait_pad
+00:0436 _joypad
+00:043B _waitpad
+00:0445 .delay
+00:047F _delay
+; Area: _LIT
+; Area: _GSINIT
+00:0488 gsinit
+; Area: _GSINITTAIL
+; Area: _GSFINAL
+; Area: _DATA
+; Area: _BSS
+00:C0A0 __cpu
+00:C0A1 .mode
+00:C0A2 __io_out
+00:C0A3 __io_in
+00:C0A4 __io_status
+00:C0A5 .vbl_done
+00:C0A6 __current_bank
+00:C0A7 _sys_time
+00:C0A7 .sys_time
+00:C0A9 .int_0x40
+00:C0B9 .int_0x48
+00:C0C9 .int_0x50
+00:C0D9 .int_0x58
+00:C0E9 .int_0x60
+; Area: _HEAP
+00:C0F9 _malloc_heap_start
+; Area: _OVERLAY
+; Area: _ISEG
+; Area: _BSEG
+; Area: _XSEG
