@@ -1,9 +1,9 @@
                               1 ;--------------------------------------------------------
                               2 ; File Created by SDCC : FreeWare ANSI-C Compiler
-                              3 ; Version 2.3.1 Mon Apr 22 12:48:29 2019
+                              3 ; Version 2.3.1 Mon Apr 22 13:07:58 2019
                               4 
                               5 ;--------------------------------------------------------
-                              6 	.module lcc851720
+                              6 	.module lcc855870
                               7 	
                               8 ;--------------------------------------------------------
                               9 ; Public variables in this module
@@ -77,72 +77,66 @@
                              77 ;	genAssign (pointer)
    000F 3E FF                78 	ld	a,#0xFF
    0011 02                   79 	ld	(bc),a
-                             80 ;	main.c 11
+                             80 ;	main.c 12
                              81 ;	genLabel
    0012                      82 00104$:
-                             83 ;	main.c 12
+                             83 ;	main.c 13
                              84 ;	genCall
                              85 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
    0012 CD 00 00             86 	call	_joypad
    0015 4B                   87 	ld	c,e
                              88 ;	genAssign
    0016 79                   89 	ld	a,c
-                             90 ;	main.c 14
+                             90 ;	main.c 15
                              91 ;	genIfx
    0017 B7                   92 	or	a,a
    0018 CA 12 00             93 	jp	z,00104$
-                             94 ;	main.c 22
+                             94 ;	main.c 18
                              95 ;	genAssign
-   001B 01 10 FF             96 	ld	bc,#0xFF10
+   001B 01 20 FF             96 	ld	bc,#0xFF20
                              97 ;	genAssign (pointer)
-   001E 3E 16                98 	ld	a,#0x16
+   001E 3E 1F                98 	ld	a,#0x1F
    0020 02                   99 	ld	(bc),a
-                            100 ;	main.c 29
+                            100 ;	main.c 25
                             101 ;	genAssign
-   0021 01 11 FF            102 	ld	bc,#0xFF11
+   0021 01 21 FF            102 	ld	bc,#0xFF21
                             103 ;	genAssign (pointer)
-   0024 3E 80               104 	ld	a,#0x80
+   0024 3E A1               104 	ld	a,#0xA1
    0026 02                  105 	ld	(bc),a
-                            106 ;	main.c 38
+                            106 ;	main.c 34
                             107 ;	genAssign
-   0027 01 12 FF            108 	ld	bc,#0xFF12
+   0027 01 22 FF            108 	ld	bc,#0xFF22
                             109 ;	genAssign (pointer)
-   002A 3E 73               110 	ld	a,#0x73
+   002A 3E 3B               110 	ld	a,#0x3B
    002C 02                  111 	ld	(bc),a
-                            112 ;	main.c 43
+                            112 ;	main.c 41
                             113 ;	genAssign
-   002D 01 13 FF            114 	ld	bc,#0xFF13
+   002D 01 23 FF            114 	ld	bc,#0xFF23
                             115 ;	genAssign (pointer)
-   0030 3E 80               116 	ld	a,#0x80
+   0030 3E C0               116 	ld	a,#0xC0
    0032 02                  117 	ld	(bc),a
-                            118 ;	main.c 52
-                            119 ;	genAssign
-   0033 01 14 FF            120 	ld	bc,#0xFF14
-                            121 ;	genAssign (pointer)
-   0036 3E C4               122 	ld	a,#0xC4
-   0038 02                  123 	ld	(bc),a
-                            124 ;	main.c 54
-                            125 ;	genIpush
-                            126 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
-   0039 21 E8 03            127 	ld	hl,#0x03E8
-   003C E5                  128 	push	hl
-                            129 ;	genCall
-   003D CD 00 00            130 	call	_delay
-   0040 E8 02               131 	lda	sp,2(sp)
-                            132 ;	genGoto
-   0042 C3 12 00            133 	jp	00104$
-                            134 ;	genLabel
-   0045                     135 00106$:
-                            136 ;	genEndFunction
-                            137 	
-   0045 C9                  138 	ret
-   0046                     139 ___main_end:
-                            140 	.area _CODE
+                            118 ;	main.c 43
+                            119 ;	genIpush
+                            120 ; _saveRegsForCall: sendSetSize: 0 deInUse: 0 bcInUse: 0 deSending: 0
+   0033 21 E8 03            121 	ld	hl,#0x03E8
+   0036 E5                  122 	push	hl
+                            123 ;	genCall
+   0037 CD 00 00            124 	call	_delay
+   003A E8 02               125 	lda	sp,2(sp)
+                            126 ;	genGoto
+   003C C3 12 00            127 	jp	00104$
+                            128 ;	genLabel
+   003F                     129 00106$:
+                            130 ;	genEndFunction
+                            131 	
+   003F C9                  132 	ret
+   0040                     133 ___main_end:
+                            134 	.area _CODE
 ASxxxx Assembler V01.75  (GameBoy Z80-like CPU), page 1.
 
 Symbol Table
 
-  0 ___main_end                        0046 R
+  0 ___main_end                        0040 R
   0 ___main_start                      0000 R
     _delay                             **** GX
     _joypad                            **** GX
@@ -152,7 +146,7 @@ Symbol Table
 
 Area Table
 
-   0 _CODE                              size   46   flags 0
+   0 _CODE                              size   40   flags 0
    1 _DATA                              size    0   flags 0
    2 _OVERLAY                           size    0   flags 0
    3 _ISEG                              size    0   flags 0
