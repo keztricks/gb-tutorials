@@ -209,7 +209,7 @@ MODULES
 	FILE /Users/kphillips/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE main.o
-		NAME lcc893960
+		NAME lcc902060
 LIBRARIES
 	LIBRARY /Users/kphillips/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o
