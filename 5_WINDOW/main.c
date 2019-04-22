@@ -1,8 +1,8 @@
 #include <gb/gb.h>
 #include <stdio.h>
-#include "background-tiles.c"
-#include "background.c"
-#include "window-map.c"
+#include "../assets/background-tiles.c"
+#include "../assets/background.c"
+#include "../assets/window-map.c"
 #include <gb/font.h>
 
 
