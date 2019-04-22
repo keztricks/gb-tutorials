@@ -1,0 +1,235 @@
+AREA .  .ABS.
+	RADIX HEX
+	BASE 0000
+	SIZE 0000
+	ATTRIB ABS OVR
+	GLOBALS
+		l__HEAP	0000
+		l__BSEG	0000
+		l_.  .ABS.	0000
+		l__GSFINAL	0000
+		l__ISEG	0000
+		s_.  .ABS.	0000
+		s__HEADER	0000
+		l__XSEG	0000
+		.init	0000
+		l__OVERLAY	0000
+		l__LIT	0000
+		l__GSINITTAIL	0001
+		l__DATA	0026
+		l__GSINIT	0032
+		l__BSS	0059
+		l__BASE	0125
+		l__HOME	01D3
+		l__HEADER	01E1
+		l__CODE	01E6
+		s__CODE	0200
+		s__HOME	03E6
+		s__BASE	05B9
+		s__LIT	06DE
+		s__GSINIT	06DE
+		s__GSINITTAIL	0710
+		s__GSFINAL	0711
+		.OAM	C000
+		s__DATA	C0A0
+		s__BSS	C0C6
+		s__HEAP	C11F
+		s__BSEG	C11F
+		s__ISEG	C11F
+		s__XSEG	C11F
+		s__OVERLAY	C11F
+		.STACK	E000
+		.refresh_OAM	FF80
+AREA _CODE
+	RADIX HEX
+	BASE 0200
+	SIZE 01E6
+	ATTRIB REL CON
+	GLOBALS
+		_performantDelay	0200
+		_wouldHitSurface	0214
+		_jump	0226
+		_main	02C6
+AREA _HEADER
+	RADIX HEX
+	BASE 0000
+	SIZE 01E1
+	ATTRIB ABS OVR
+	GLOBALS
+		_exit	01D2
+AREA _HOME
+	RADIX HEX
+	BASE 03E6
+	SIZE 01D3
+	ATTRIB REL CON
+	GLOBALS
+		.set_mode	03E6
+		.remove_VBL	03F6
+		.remove_LCD	03FC
+		.remove_TIM	0402
+		.remove_SIO	0408
+		.remove_JOY	040E
+		.add_VBL	0414
+		.add_LCD	041A
+		.add_TIM	0420
+		.add_SIO	0426
+		.add_JOY	042C
+		.remove_int	0432
+		.add_int	0452
+		.wait_vbl_done	046E
+		_wait_vbl_done	046E
+		_display_off	0485
+		.display_off	0485
+		.serial_IO	04A6
+		_mode	04D5
+		_get_mode	04DE
+		_enable_interrupts	04E3
+		_disable_interrupts	04E5
+		_reset	04E7
+		.reset	04E7
+		_set_interrupts	04ED
+		_remove_VBL	04F8
+		_remove_LCD	0503
+		_remove_TIM	050E
+		_remove_SIO	0519
+		_remove_JOY	0524
+		_add_VBL	052F
+		_add_LCD	053A
+		_add_TIM	0545
+		_add_SIO	0550
+		_add_JOY	055B
+		_clock	0566
+		__printTStates	056F
+		banked_call	0570
+		banked_ret	0589
+		__initrleblock	0592
+AREA _BASE
+	RADIX HEX
+	BASE 05B9
+	SIZE 0125
+	ATTRIB REL CON
+	GLOBALS
+		.mv_sprite	05B9
+		_move_sprite	05C8
+		_set_win_data	05D5
+		_set_bkg_data	05D5
+		_set_sprite_data	0622
+		.padup	0651
+		_waitpadup	0651
+		.jpad	0661
+		.wait_pad	068E
+		_joypad	0695
+		_waitpad	069A
+		.set_sprite_tile	06A4
+		_set_sprite_tile	06B1
+		.copy_vram	06BC
+		_get_data	06CB
+		_set_data	06CB
+AREA _LIT
+	RADIX HEX
+	BASE 06DE
+	SIZE 0000
+	ATTRIB REL CON
+AREA _GSINIT
+	RADIX HEX
+	BASE 06DE
+	SIZE 0032
+	ATTRIB REL CON
+	GLOBALS
+		gsinit	06DE
+AREA _GSINITTAIL
+	RADIX HEX
+	BASE 0710
+	SIZE 0001
+	ATTRIB REL CON
+AREA _GSFINAL
+	RADIX HEX
+	BASE 0711
+	SIZE 0000
+	ATTRIB REL CON
+AREA _DATA
+	RADIX HEX
+	BASE C0A0
+	SIZE 0026
+	ATTRIB REL CON
+	GLOBALS
+		_frontMan	C0A0
+		_playerLocation	C0C0
+		_jumping	C0C2
+		_gravity	C0C3
+		_currentSpeedY	C0C4
+		_floorYPosition	C0C5
+AREA _BSS
+	RADIX HEX
+	BASE C0C6
+	SIZE 0059
+	ATTRIB REL CON
+	GLOBALS
+		__cpu	C0C6
+		.mode	C0C7
+		__io_out	C0C8
+		__io_in	C0C9
+		__io_status	C0CA
+		.vbl_done	C0CB
+		__current_bank	C0CC
+		_sys_time	C0CD
+		.sys_time	C0CD
+		.int_0x40	C0CF
+		.int_0x48	C0DF
+		.int_0x50	C0EF
+		.int_0x58	C0FF
+		.int_0x60	C10F
+AREA _HEAP
+	RADIX HEX
+	BASE C11F
+	SIZE 0000
+	ATTRIB REL CON
+	GLOBALS
+		_malloc_heap_start	C11F
+AREA _OVERLAY
+	RADIX HEX
+	BASE C11F
+	SIZE 0000
+	ATTRIB REL CON
+AREA _ISEG
+	RADIX HEX
+	BASE C11F
+	SIZE 0000
+	ATTRIB REL CON
+AREA _BSEG
+	RADIX HEX
+	BASE C11F
+	SIZE 0000
+	ATTRIB REL CON
+AREA _XSEG
+	RADIX HEX
+	BASE C11F
+	SIZE 0000
+	ATTRIB REL CON
+MODULES
+	FILE /Users/kphillips/gbdk/lib/small/asxxxx/gb/crt0.o
+		NAME Runtime
+	FILE main.o
+		NAME lcc877950
+LIBRARIES
+	LIBRARY /Users/kphillips/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
+		MODULE crt0_rle.o
+	LIBRARY /Users/kphillips/gbdk/lib/small/asxxxx/gb/gb.lib
+		MODULE mv_spr.o
+	LIBRARY /Users/kphillips/gbdk/lib/small/asxxxx/gb/gb.lib
+		MODULE set_data.o
+	LIBRARY /Users/kphillips/gbdk/lib/small/asxxxx/gb/gb.lib
+		MODULE pad.o
+	LIBRARY /Users/kphillips/gbdk/lib/small/asxxxx/gb/gb.lib
+		MODULE set_spr.o
+	LIBRARY /Users/kphillips/gbdk/lib/small/asxxxx/gb/gb.lib
+		MODULE cpy_data.o
+USERBASEDEF
+	_CODE=0x0200
+	_DATA=0xC0A0
+	_CODE_1=0x4000
+USERGLOBALDEF
+	.OAM=0xC000
+	.STACK=0xE000
+	.refresh_OAM=0xFF80
+	.init=0x0000
